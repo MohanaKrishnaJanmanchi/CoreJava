@@ -21,10 +21,10 @@ public class Main {
         s.reversingEachWord("Laughing is not always a best Medicine");
         s.reversingEachWord("level radar kayak civic rotor kayak radar level");
 
-        System.out.println("\nChecking if String is rotated");
-        System.out.println(s.checkIfRotated("JavaJ2eeStrutsHibernate", "StrutsHibernateJavaJ2ee"));
-        System.out.println(s.checkIfRotated("thisisacheck","checkthisisa"));
-        System.out.println(s.checkIfRotated("is it rotated","or not?"));
+        System.out.println("\nCHECKING STRING ROTATION");
+        System.out.println(s.checkIfRotated("JavaJ2eeStrutsHibernate", "StrutsHibernateJavaJ2ee")+"\n");
+        System.out.println(s.checkIfRotated("thisisacheck","checkthisisa")+"\n");
+        System.out.println(s.checkIfRotated("is it rotated","or not?")+"\n");
 
         System.out.println("\nSorted List of Student based on Last Name");
         CSVReaderExample c = new CSVReaderExample();

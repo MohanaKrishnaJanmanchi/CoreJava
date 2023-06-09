@@ -14,11 +14,13 @@ public class StringManipulations {
         Arrays.sort(sortedChars1);
         Arrays.sort(sortedChars2);
         if(Arrays.equals(sortedChars1,sortedChars2))
-            return s1 +" and "+s2+" are Anagrams";
-        return s1 +" and "+s2+" are not Anagrams";
+            return "\""+s1+"\"" +" and \""+s2+"\" are Anagrams";
+        return "\""+s1+"\"" +" and \""+s2+"\" are NOT Anagrams";
     }
 
     public void reversingEachWord(String text){
+        System.out.println("ORIGINAL: " + text);
+        System.out.print("RESULT: ");
         String[] words = text.split(" ");
         for (int i = 0; i < words.length; i++){
             String temp = words[i];
@@ -27,10 +29,11 @@ public class StringManipulations {
             }
             System.out.print(" ");
         }
-        System.out.println();
+        System.out.println("\n");
     }
 
     public boolean checkIfRotated(String s1, String s2){
+        System.out.println("Strings to be checked :\"" + s1 + "\" , \"" + s2 + "\"");
         if(s1.length() != s2.length())
             return false;
         String s3 = s1 + s1;
