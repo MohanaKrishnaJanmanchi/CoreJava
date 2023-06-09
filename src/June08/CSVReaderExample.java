@@ -10,7 +10,7 @@ import java.util.List;
 
 public class CSVReaderExample {
     public void sortStudent(){
-        String csvFile = "C:/JMKS/CIS/Java/CoreJava/src/June07/students.csv";
+        String csvFile = "C:/JMKS/CIS/Java/CoreJava/src/June08/students.csv";
         String line;
         List<Student> students = new ArrayList<>();
 
