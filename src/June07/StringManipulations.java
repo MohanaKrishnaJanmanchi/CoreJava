@@ -19,17 +19,14 @@ public class StringManipulations {
     }
 
     public void reversingEachWord(String text){
-        System.out.println("ORIGINAL: " + text);
-        System.out.print("RESULT: ");
-        String[] words = text.split(" ");
-        for (int i = 0; i < words.length; i++){
-            String temp = words[i];
-            for(int j = temp.length() - 1; j >= 0; j--){
-                System.out.print(temp.charAt(j));
-            }
-            System.out.print(" ");
+        String words[]=text.split("\\s");
+        String reverseWord="";
+        for(String w:words){
+            StringBuilder sb=new StringBuilder(w);
+            sb.reverse();
+            reverseWord+=sb.toString()+" ";
         }
-        System.out.println("\n");
+        System.out.println(reverseWord.trim());
     }
 
     public boolean checkIfRotated(String s1, String s2){
