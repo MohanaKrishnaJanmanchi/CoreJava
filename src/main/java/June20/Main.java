@@ -18,12 +18,15 @@ public class Main {
         studentHashMap.put("S8", new StudentHashMap("S8", "ln8", 9.6));
 
 
-        System.out.println("Using entrySet()");
-        for(Map.Entry<String, StudentHashMap> student: studentHashMap.entrySet()){
-            String firstName = student.getKey();
-            StudentHashMap sobj = student.getValue();
-            System.out.println("FirstName: " + firstName + " Student Object: " + sobj);
-        }
+//        System.out.println("Using entrySet()");
+//        for(Map.Entry<String, StudentHashMap> student: studentHashMap.entrySet()){
+//            String firstName = student.getKey();
+//            StudentHashMap sobj = student.getValue();
+//            System.out.println("FirstName: " + firstName + " Student Object: " + sobj);
+
+        int i = 1;
+        int[] arr = new int[1];//        }
+        System.out.println(studentHashMap.entrySet());
 
         System.out.println("\nUsing forEach()");
         studentHashMap.forEach((fn, sobj) -> System.out.println("FirstName: " + fn + " Student Object: " + sobj));
